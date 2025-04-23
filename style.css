@@ -1,0 +1,153 @@
+body {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+  background-color: #607D8B;
+
+}
+.firstdiv{
+	width: 1000px;
+	height: 800px;
+  padding: 30px;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+  background-color: #90A4AE;
+  border-radius: 30px;
+  flex-direction: column;
+  gap: 10px;
+}
+.seconddiv {
+  width: 1000px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 50px;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #78909C;
+  border-radius: 30px;
+}
+.thirddiv {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  height: 710px;
+
+}
+.fourthdiv {
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  height: 650px;
+  padding: 30px;
+  gap: 10px;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  background-color: #78909C;
+  border-radius: 30px;
+  border: 5px solid #90A4AE;
+  overflow: scroll;
+
+}
+.fifthdiv {
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  height: 650px;
+  padding: 30px;
+  gap: 10px;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  background-color: #78909C;
+  border-radius: 30px;
+  border: 5px solid #90A4AE;
+
+}
+.todolist {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 440px;
+  height: 50px;
+  font-size: 20px;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.completedlist {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 440px;
+  height: 50px;
+  font-size: 20px;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.input {
+  font-size: 30px;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 20px;
+  background-color: #4E6874;
+  border: 2px solid #4E6874;
+
+}
+.add {
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 5px;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #4E6874;
+  border: 2px solid #4E6874;
+}
+.inputsecond {
+  font-size: 30px;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 20px;
+  background-color: #4E6874;
+  border: 2px solid #4E6874;
+}
+.removebutton {
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 5px;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #4E6874;
+  border: 2px solid #4E6874;
+}
+.completed-button {
+  position: relative;
+  left: 193px;
+  top: -3px;
+  font-size: 20px;
+  padding: 5px;
+  background-color: font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: #4E6874;
+  border: 2px solid #4E6874;;
+  border-radius: 30px;
+}
