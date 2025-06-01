@@ -1,40 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>To-Do Web App</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Playfair+Display&family=Quattrocento:wght@400;700&family=Rochester&family=Special+Gothic+Expanded+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dark Mode To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-	<div class="firstdiv">
-		<div class="seconddiv" id="seconddiv">
-			<div class="name" id="name">To-Do Web App</div>
-		</div>
-			<div class="thirddiv" id="thirddiv">
-				<div class="fourthdiv" id="fourthdiv">
-					<div class="todolist" id="todolist">
-						<h1>To-Do List</h1>
-					</div>	
-					<input class="input" id="input" type="text" name="">
-					<button class="add" id="add">Add</button>
-					<div class="listitemsfordiv" id="listitemsfordiv"></div>
-				</div>
-				<div class="fifthdiv" id="fifthdiv">
-					<div class="completedlist" id="completedlist">
-						<h1>Completed List</h1>
-					</div>
-					<input class="inputsecond" id="inputsecond" type="text" name="">
-					<button class="removebutton" id="removebutton">Remove</button>
-					<div class="completeddiv" id="completeddiv"></div>
-				</div>
-			</div>
-	</div>
-<script src="index.js"></script>
+  <div class="app-container">
+    <h1>📝 To-Do List</h1>
+
+    <div class="todo-input">
+      <input type="text" id="newtask" placeholder="Add a new task..." />
+      <button id="addtask">Add</button>
+    </div>
+
+    <ul id="tasklist" class="task-list">
+      <!-- Tasks will be inserted here by JavaScript -->
+    </ul>
+
+    <div class="todo-controls">
+      <span id="task-count">0 tasks left</span>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+      </div>
+
+      <button id="clear-completed">Clear Completed</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
 </body>
 </html>
-
-

@@ -1,153 +1,131 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-	margin: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-  background-color: #607D8B;
-
-}
-.firstdiv{
-	width: 1000px;
-	height: 800px;
-  padding: 30px;
-	margin: 0;
-	display: flex;
-	justify-content: center;
-  background-color: #90A4AE;
-  border-radius: 30px;
-  flex-direction: column;
-  gap: 10px;
-}
-.seconddiv {
-  width: 1000px;
-  height: 90px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 0;
-  font-size: 50px;
-  font-family: "Special Gothic Expanded One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background-color: #78909C;
-  border-radius: 30px;
+  align-items: start;
+  padding: 2rem;
 }
-.thirddiv {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1000px;
-  height: 710px;
 
+.app-container {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
 }
-.fourthdiv {
-  display: flex;
-  flex-direction: column;
-  width: 440px;
-  height: 650px;
-  padding: 30px;
-  gap: 10px;
-  font-family: "Special Gothic Expanded One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
-  background-color: #78909C;
-  border-radius: 30px;
-  border: 5px solid #90A4AE;
-  overflow: scroll;
 
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
 }
-.fifthdiv {
-  display: flex;
-  flex-direction: column;
-  width: 440px;
-  height: 650px;
-  padding: 30px;
-  gap: 10px;
-  font-family: "Special Gothic Expanded One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 25px;
-  background-color: #78909C;
-  border-radius: 30px;
-  border: 5px solid #90A4AE;
 
-}
-.todolist {
-  margin: 0;
+.todo-input {
   display: flex;
-  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.todo-input input {
+  flex-grow: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #2c2c2c;
+  color: #fff;
+}
+
+.todo-input button {
+  background-color: #4caf50;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.todo-input button:hover {
+  background-color: #45a049;
+}
+
+.task-list {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.task-list li {
+  background-color: #2c2c2c;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  width: 440px;
-  height: 50px;
-  font-size: 20px;
-  font-family: "Special Gothic Expanded One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
-.completedlist {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 440px;
-  height: 50px;
-  font-size: 20px;
-  font-family: "Special Gothic Expanded One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.input {
-  font-size: 30px;
-  font-family: "Special Gothic Expanded One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  border-radius: 20px;
-  background-color: #4E6874;
-  border: 2px solid #4E6874;
 
+.task-list li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
 }
-.add {
-  font-size: 20px;
-  border-radius: 20px;
-  padding: 5px;
-  font-family: "Special Gothic Expanded One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background-color: #4E6874;
-  border: 2px solid #4E6874;
+
+.task-list li button {
+  background: none;
+  border: none;
+  color: #f44336;
+  font-weight: bold;
+  cursor: pointer;
 }
-.inputsecond {
-  font-size: 30px;
-  font-family: "Special Gothic Expanded One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  border-radius: 20px;
-  background-color: #4E6874;
-  border: 2px solid #4E6874;
+
+.todo-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
-.removebutton {
-  font-size: 20px;
-  border-radius: 20px;
-  padding: 5px;
-  font-family: "Special Gothic Expanded One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background-color: #4E6874;
-  border: 2px solid #4E6874;
+
+.filters {
+  display: flex;
+  gap: 0.5rem;
 }
-.completed-button {
-  position: relative;
-  left: 193px;
-  top: -3px;
-  font-size: 20px;
-  padding: 5px;
-  background-color: font-family: "Special Gothic Expanded One", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  background-color: #4E6874;
-  border: 2px solid #4E6874;;
-  border-radius: 30px;
+
+.filter-btn {
+  background-color: #333;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background-color: #4caf50;
+}
+
+#clear-completed {
+  background-color: #f44336;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+#clear-completed:hover {
+  background-color: #e53935;
 }
